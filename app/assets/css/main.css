@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Geist', sans-serif;
+  --font-heading: 'Lora', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+::selection {
+  background-color: color-mix(in oklab, var(--ui-primary) 30%, transparent);
+  color: var(--ui-text-highlighted);
+}

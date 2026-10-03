@@ -1,0 +1,31 @@
+{
+  "name": "whoami",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun --bun nuxt generate",
+    "dev": "bun --bun nuxt dev",
+    "preview": "bun --bun nuxt preview",
+    "postinstall": "bun --bun nuxt prepare",
+    "lint": "eslint .",
+    "typecheck": "bun --bun nuxt typecheck"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.16.1",
+    "@nuxt/image": "^2.1.0",
+    "@nuxt/ui": "^4.11.3",
+    "@valibot/to-json-schema": "^1.8.0",
+    "motion-v": "^2.5.2",
+    "nuxt": "^4.5.2",
+    "tailwindcss": "^4.3.3",
+    "valibot": "^1.5.0"
+  },
+  "devDependencies": {
+    "@iconify-json/ph": "^1.2.2",
+    "@nuxt/eslint": "^1.17.0",
+    "eslint": "^10.12.0",
+    "eslint-plugin-better-tailwindcss": "^4.7.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.12"
+  }
+}
